@@ -1,0 +1,21 @@
+<section class="post-section">
+  {{#each posts as |post|}}
+    <article class="post">
+      <div class="container-fluid">
+        <div class="card post-card">
+          <div class="card-header post-header">
+            <h4 class="card-title post-title">
+              <a class="post-link" href="/post/{{id}}">{{title}}</a>
+            </h4>
+          </div>
+          <div class="card-body post-body">
+            <p class="card-text post-content">{{content}}</p>
+            <p class="card-text post-author">
+              Posted by <span class="post-username">{{user.username}}</span> on {{format_date createdAt}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+  {{/each}}
+</section>

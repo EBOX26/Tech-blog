@@ -1,0 +1,34 @@
+<section class="dashboard-container">
+  <header class="dashboard-header">
+    <h2 class="dashboard-heading">Dashboard: My Blog Posts</h2>
+    <div class="add-post-button">
+      <a href="/dashboard/new" class="btn btn-success">New Post</a>
+    </div>
+  </header>
+
+  <div class="dashboard-posts">
+    {{#if posts.length}}
+      {{#each posts as |post|}}
+        <article class="post">
+          <div class="card dashboard-post">
+            <div class="card-header post-header">
+              <h4 class="card-title post-title">
+                <a href="/dashboard/edit/{{id}}" class="post-link">{{title}}</a>
+              </h4>
+            </div>
+            <div class="card-body post-body">
+              <p class="card-text post-content">{{content}}</p>
+              <p class="card-text post-author">
+                Posted by <span class="post-username">{{user.username}}</span>
+                on {{format_date post.createdAt}}
+              </p>
+            </div>
+          </div>
+        </article>
+      {{/each}}
+    {{else}}
+      <p class="no-posts-message">No posts available.</p>
+    {{/if}}
+  </div>
+</section>
+
