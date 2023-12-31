@@ -82,4 +82,9 @@ MIT License
 For any questions about this program, please reach out to me on GitHub: https://github.com/EBOX26 or to my email: 
 
 ---
+![image](https://github.com/EBOX26/Tech-blog/assets/139289311/1d7367b8-5e1c-4942-9009-8a712d713569)
+![image](https://github.com/EBOX26/Tech-blog/assets/139289311/9253d59d-da1b-4fd1-9f10-8f4ee743be73)
+![image](https://github.com/EBOX26/Tech-blog/assets/139289311/aae28e51-c3af-4879-93b3-a16c2ef09262)
+
+
     
