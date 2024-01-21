@@ -1,0 +1,13 @@
+<h2>Dashboard</h2>
+
+{{#if posts.length}}
+  {{#each posts}}
+    <h3>{{title}}</h3>
+    <p>{{content}}</p>
+    <p>Created on {{createdAt}}</p>
+    <a href="/update/{{id}}">Update</a> | <a href="/delete/{{id}}">Delete</a>
+    <hr>
+  {{/each}}
+{{else}}
+  <p>No posts yet. <a href="/new">Create one</a>.</p>
+{{/if}}

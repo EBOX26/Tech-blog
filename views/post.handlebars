@@ -1,0 +1,12 @@
+<h2>{{title}}</h2>
+<p>{{content}}</p>
+<p>Created by {{username}} on {{createdAt}}</p>
+
+{{#each comments}}
+  <p>{{text}} by {{commenterUsername}} on {{createdAt}}</p>
+{{/each}}
+
+<form action="/comments/new/{{postId}}" method="POST">
+  <textarea name="commentText" placeholder="Leave a comment" required></textarea>
+  <button type="submit">Submit</button>
+</form>
